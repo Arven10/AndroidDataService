@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_information"
+        android:id="@+id/textView"
+        android:gravity="top|center"
+        android:textSize="24sp"
+        android:textColor="@color/primaryTextColor"
+        android:paddingTop="@dimen/padding_below_divider_text_view"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/padding_below_divider_text_view"
+            android:paddingLeft="@dimen/padding_below_divider_text_view">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/id"
+                android:id="@+id/idUser"
+                android:paddingTop="@dimen/padding_above_and_below_text"
+                android:paddingLeft="@dimen/padding_below_divider_text_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewIdUser"
+                android:paddingBottom="@dimen/padding_below_divider_text_view"
+                android:paddingLeft="@dimen/padding_below_divider_text_view"
+                android:textSize="24sp"
+                android:textColor="@color/primaryTextColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firstName"
+                android:id="@+id/firstNameUser"
+                android:paddingTop="@dimen/padding_above_and_below_text"
+                android:paddingLeft="@dimen/padding_below_divider_text_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewFirstName"
+                android:paddingBottom="@dimen/padding_below_divider_text_view"
+                android:paddingLeft="@dimen/padding_below_divider_text_view"
+                android:textSize="24sp"
+                android:textColor="@color/primaryTextColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:id="@+id/phoneUser"
+                android:paddingTop="@dimen/padding_above_and_below_text"
+                android:paddingLeft="@dimen/padding_below_divider_text_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewPhone"
+                android:paddingBottom="@dimen/padding_below_divider_text_view"
+                android:paddingLeft="@dimen/padding_below_divider_text_view"
+                android:textSize="24sp"
+                android:textColor="@color/primaryTextColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:id="@+id/emailUser"
+                android:paddingTop="@dimen/padding_above_and_below_text"
+                android:paddingLeft="@dimen/padding_below_divider_text_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewEmail"
+                android:paddingBottom="@dimen/padding_below_divider_text_view"
+                android:paddingLeft="@dimen/padding_below_divider_text_view"
+                android:textSize="24sp"
+                android:textColor="@color/primaryTextColor" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

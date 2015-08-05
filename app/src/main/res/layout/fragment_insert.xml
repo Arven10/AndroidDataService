@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/padding_below_divider_text_view"
+            android:paddingLeft="@dimen/padding_below_divider_text_view">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firstName"
+                android:id="@+id/labelFirstName"
+                android:paddingTop="@dimen/padding_above_and_below_text"
+                android:paddingLeft="@dimen/padding_below_divider_text_view" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextFirstName"
+                android:paddingBottom="@dimen/padding_below_divider_text_view"
+                android:paddingLeft="@dimen/padding_below_divider_text_view"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:id="@+id/labelPhone"
+                android:paddingTop="@dimen/padding_above_and_below_text"
+                android:paddingLeft="@dimen/padding_below_divider_text_view" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editTextPhone"
+                android:paddingBottom="@dimen/padding_below_divider_text_view"
+                android:paddingLeft="@dimen/padding_below_divider_text_view"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:id="@+id/labelEmail"
+                android:paddingTop="@dimen/padding_above_and_below_text"
+                android:paddingLeft="@dimen/padding_below_divider_text_view" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editTextEmail"
+                android:paddingBottom="@dimen/padding_below_divider_text_view"
+                android:paddingLeft="@dimen/padding_below_divider_text_view"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insert_button"
+        android:id="@+id/insertButton"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
