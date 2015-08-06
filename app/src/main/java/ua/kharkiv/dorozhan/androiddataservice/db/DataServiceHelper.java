@@ -67,12 +67,14 @@ public class DataServiceHelper extends SQLiteOpenHelper {
                 users.add(user);
             } while (cursor.moveToNext());
         }
+        cursor.close();
+        db.close();
         return users;
     }
 
-    public void deleteRecords(){
+    public void deleteRecords() {
         SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("delete from " + TABLE_USERS);
+        db.execSQL("DELETE FROM " + TABLE_USERS);
         db.close();
     }
 }
